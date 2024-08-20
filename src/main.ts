@@ -7,7 +7,7 @@ import * as bodyParser from 'body-parser';
 async function bootstrap() {
   ConfigModule.forRoot();
   const app = await NestFactory.create(AppModule, { cors:true});
-  app.setGlobalPrefix('api/zclt')
+  app.setGlobalPrefix('api/')
   const options = new DocumentBuilder()
     .setTitle('Send Messages Whatsapp')
     .setDescription('Send notification via whatsapp')

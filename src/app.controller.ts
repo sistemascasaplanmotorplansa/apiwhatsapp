@@ -4,7 +4,7 @@ import { AppService } from './app.service';
 import { DataDTO } from './data.dto';
 
 @ApiTags('api-Meta')
-@Controller('meata')
+@Controller('meta')
 export class AppController {
   constructor(
     private readonly appService: AppService
